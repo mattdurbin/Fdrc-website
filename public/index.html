@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en-GB">
 <head>
@@ -52,7 +53,7 @@
     .button-ink{background:var(--ink);color:#fff;border:1px solid var(--ink)}.button-ink:hover{background:#2f414e}
     .hero-art{position:relative;display:grid;place-items:center;aspect-ratio:1}
     .target-rings{position:absolute;width:118%;aspect-ratio:1;border-radius:50%;border:1px solid #a8bcc342;box-shadow:0 0 0 24px #fff0,0 0 0 25px #dce9e61b,0 0 0 68px #fff0,0 0 0 69px #dce9e615;transform:rotate(-10deg)}
-    .hero-card{position:relative;width:min(87%,450px);aspect-ratio:1;display:grid;place-items:center;background:#fff;padding:22px;border:11px solid #ffffff15;border-radius:8px;box-shadow:0 22px 80px #0008;transform:rotate(-3deg)}
+    .hero-card{position:relative;width:min(87%,450px);aspect-ratio:1;display:grid;place-items:center;background:#f0f1ef;padding:22px;border:11px solid #ffffff15;border-radius:8px;box-shadow:0 22px 80px #0008;transform:rotate(-3deg)}
     .hero-card img{width:100%;display:block;transform:rotate(3deg)}
     .est-label{position:absolute;right:-25px;bottom:14px;background:var(--accent);padding:13px 20px;box-shadow:0 10px 22px #0004;font-weight:850;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transform:rotate(3deg)}
     .hero-index{position:absolute;bottom:24px;right:24px;letter-spacing:.18em;color:#ffffff66;font-size:10px;text-transform:uppercase;font-weight:900}
@@ -92,12 +93,14 @@
     .detail-row{border-bottom:1px solid var(--line);padding:21px 0;display:flex;gap:17px;align-items:flex-start}
     .detail-row:last-child{border-bottom:0}.detail-mark{width:10px;height:10px;background:var(--accent);flex:none;margin-top:9px}
     .detail-row strong{font-size:16px;display:block;margin-bottom:5px}.detail-row span{font-size:14px;color:#57636c}
-    .map-card{border-radius:5px;background:#e7eae8;padding:31px;min-height:385px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
-    .map-card::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 40%,#fff7 40% 43%,transparent 43%),linear-gradient(5deg,transparent 50%,#fff8 50% 54%,transparent 54%),linear-gradient(150deg,transparent 60%,#fff7 60% 63%,transparent 63%);background-size:300px 280px;opacity:.7}
-    .map-card .map-location{position:relative;z-index:1;display:flex;align-items:center;gap:12px;max-width:340px;background:#fff;border-radius:4px;padding:16px 19px;box-shadow:0 6px 20px #26332b16;font-size:15px;font-weight:850}
-    .map-dot{display:grid;place-items:center;width:32px;height:32px;background:var(--accent);color:white;border-radius:50%;font-size:18px;flex:none}
-    .map-card .map-lower{position:relative;z-index:1;display:flex;align-items:end;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    .map-card .map-lower span{font-size:14px;line-height:1.4;color:#46555c;font-weight:800}
+    .map-card{position:relative;overflow:hidden;min-width:0;border-radius:7px;border:1px solid #dce2e4;background:#e8ecee;box-shadow:0 15px 35px #0e26320a}
+    .map-embed{width:100%;height:370px;display:block;border:0;background:#e8ecee}
+    .map-location{display:flex;align-items:center;gap:11px;padding:13px 18px;background:#fff;border-bottom:1px solid #e6e8e9;color:var(--ink);font-size:14px;line-height:1.35;font-weight:850}
+    .map-dot{display:grid;place-items:center;width:32px;height:32px;background:var(--accent);color:#fff;border-radius:50%;font-size:17px;flex:none}
+    .map-caption{padding:17px 18px 18px;background:#fff;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .map-caption-address{font-size:12px;line-height:1.5;color:#485963;font-weight:800;letter-spacing:.03em}
+    .map-caption .button{white-space:nowrap;padding:13px 17px;min-height:44px}
+    .map-assist{padding:0 18px 15px;background:#fff;font-size:11px;line-height:1.45;color:#66757b}
     .faq{background:var(--paper);padding:90px 0}
     .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:78px}
     details{border-bottom:1px solid #d5d9d7;padding:0 0 0}
@@ -116,7 +119,7 @@
     .footer-brand strong{display:block;color:#fff;font-size:13px;line-height:1.3}.footer-brand span{font-size:12px;color:#91a2aa}
     .footer-right{text-align:right;color:#aab8bf}.footer-right a{color:#fff;text-decoration:underline;text-underline-offset:4px}
     @media(max-width:980px){.desktop-nav{gap:14px}.hero-grid{gap:30px;min-height:0}.hero h1{font-size:clamp(45px,5.3vw,65px)}.about-grid{gap:40px}.visit-grid{gap:30px}.contact-box{padding:45px}}
-    @media(max-width:760px){html{scroll-padding-top:76px}.container{width:min(var(--width),calc(100% - 38px))}.header-inner{height:74px}.brand img{width:52px;height:52px}.brand span{font-size:12px}.menu-toggle{display:grid}.desktop-nav{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 12px 20px #10182018;flex-direction:column;align-items:stretch;gap:0;padding:8px 22px 16px}.desktop-nav.open{display:flex}.desktop-nav a{padding:12px 6px;border-bottom:1px solid #eef0ef}.desktop-nav a.nav-cta{margin-top:10px;text-align:center;padding:13px}.hero-grid{grid-template-columns:1fr;gap:57px;padding-block:68px 85px}.hero h1{font-size:clamp(45px,10vw,70px);max-width:640px}.hero-description{font-size:17px}.hero-art{max-width:430px;width:88%;margin:auto}.hero-card{width:92%}.est-label{right:-10px}.hero-index{display:none}.strip-inner{grid-template-columns:1fr}.strip-item{border-right:0;border-bottom:1px solid #dce0df;padding:17px 0}.strip-item:last-child{border-bottom:0}.section{padding:72px 0}.about-grid,.discipline-grid,.visit-grid,.faq-grid,.contact-box{grid-template-columns:1fr}.about-panel{min-height:300px}.discipline-grid{margin-top:31px}.discipline-card{padding:30px;min-height:285px}.steps{grid-template-columns:1fr;gap:5px;margin-top:30px}.step{padding-top:22px}.step-number{margin-bottom:10px}.membership .button{margin-top:5px}.visit-grid{gap:25px}.map-card{min-height:300px}.faq{padding:73px 0}.faq-grid{gap:16px}.contact{padding:70px 0}.contact-box{gap:25px;padding:34px 28px}.contact-actions{margin-left:0;max-width:100%}.footer-inner{align-items:flex-start}.footer-right{text-align:left}}
+    @media(max-width:760px){html{scroll-padding-top:76px}.container{width:min(var(--width),calc(100% - 38px))}.header-inner{height:74px}.brand img{width:52px;height:52px}.brand span{font-size:12px}.menu-toggle{display:grid}.desktop-nav{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 12px 20px #10182018;flex-direction:column;align-items:stretch;gap:0;padding:8px 22px 16px}.desktop-nav.open{display:flex}.desktop-nav a{padding:12px 6px;border-bottom:1px solid #eef0ef}.desktop-nav a.nav-cta{margin-top:10px;text-align:center;padding:13px}.hero-grid{grid-template-columns:1fr;gap:57px;padding-block:68px 85px}.hero h1{font-size:clamp(45px,10vw,70px);max-width:640px}.hero-description{font-size:17px}.hero-art{max-width:430px;width:88%;margin:auto}.hero-card{width:92%}.est-label{right:-10px}.hero-index{display:none}.strip-inner{grid-template-columns:1fr}.strip-item{border-right:0;border-bottom:1px solid #dce0df;padding:17px 0}.strip-item:last-child{border-bottom:0}.section{padding:72px 0}.about-grid,.discipline-grid,.visit-grid,.faq-grid,.contact-box{grid-template-columns:1fr}.about-panel{min-height:300px}.discipline-grid{margin-top:31px}.discipline-card{padding:30px;min-height:285px}.steps{grid-template-columns:1fr;gap:5px;margin-top:30px}.step{padding-top:22px}.step-number{margin-bottom:10px}.membership .button{margin-top:5px}.visit-grid{gap:25px}.map-embed{height:330px}.faq{padding:73px 0}.faq-grid{gap:16px}.contact{padding:70px 0}.contact-box{gap:25px;padding:34px 28px}.contact-actions{margin-left:0;max-width:100%}.footer-inner{align-items:flex-start}.footer-right{text-align:left}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
   </style>
 </head>
@@ -145,7 +148,7 @@
         </div>
         <div class="hero-art" aria-label="Feltham and District Rifle Club official emblem">
           <div class="target-rings" aria-hidden="true"></div>
-          <div class="hero-card"><img src="/assets/club-logo.webp" alt="Feltham and District Rifle Club white-background emblem featuring rifles, target, red crosshairs and Estd. 1909" width="630" height="630"><div class="est-label">Est. 1909</div></div>
+          <div class="hero-card"><img src="/assets/club-logo.webp" alt="Feltham and District Rifle Club transparent emblem featuring rifles, target, red crosshairs and Estd. 1909" width="630" height="630"><div class="est-label">Est. 1909</div></div>
         </div>
         <span class="hero-index" aria-hidden="true">FDRC / PRECISION · COMMUNITY</span>
       </div>
@@ -184,9 +187,16 @@
         <div class="detail-row"><i class="detail-mark" aria-hidden="true"></i><div><strong>Before you visit</strong><span>Please contact the club to confirm times, access and visitor arrangements.</span></div></div>
         <p style="font-size:12px;color:#6b7980;margin-top:18px">Please email <a href="mailto:secretary@fdrc.uk">secretary@fdrc.uk</a> before visiting to check arrangements.</p>
       </div>
-      <div class="map-card" role="group" aria-label="Location information for Feltham and District Rifle Club">
-        <div class="map-location"><span class="map-dot" aria-hidden="true">⌖</span><span>Feltham &amp; District<br>Rifle Club</span></div>
-        <div class="map-lower"><span>NEW ROAD<br>FELTHAM · TW14 9BG</span><a class="button button-ink" href="https://www.google.com/maps/search/?api=1&amp;query=51.4482946%2C-0.4103246" target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a></div>
+      <div class="map-card" role="group" aria-label="Map showing Feltham and District Rifle Club">
+        <div class="map-location"><span class="map-dot" aria-hidden="true">⌖</span><span>Feltham &amp; District Rifle Club</span></div>
+        <iframe class="map-embed" title="Interactive Google Map: Feltham and District Rifle Club, New Road, Feltham"
+                src="https://maps.google.com/maps?q=51.4482946%2C-0.4103246&amp;z=19&amp;output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map-caption">
+          <span class="map-caption-address">NEW ROAD · FELTHAM<br>Pin: 51.4482946, -0.4103246</span>
+          <a class="button button-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=51.4482946%2C-0.4103246" target="_blank" rel="noopener noreferrer">Get directions ↗</a>
+        </div>
+        <div class="map-assist">Contact the secretary before travelling to confirm club access and meeting arrangements.</div>
       </div>
     </div></section>
     <section class="faq"><div class="container faq-grid">
